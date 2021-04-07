@@ -1,0 +1,19 @@
+<%- include('partials/header'); -%>
+<%- include('partials/navbar') %>
+<div class="container">
+  <form action="" class="recipe-form">
+    <h2>Write your recipe</h2>
+    <label for="title">Dish Title</label>
+    <input type="text" name="title" required />
+    <label for="image">Image</label>
+    <input type="text" name="image" placeholder="I.e. imgur.com/image" required />
+    <label for="content">Recipe</label>
+    <textarea class="text-area" name="content" cols="30" rows="10" required></textarea>
+
+    <button class="form-btn">Send</button>
+  </form>
+</div>
+
+<script src="/js/writeRecipe.js"></script>
+
+<%- include('partials/footer'); -%>

@@ -1,0 +1,302 @@
+/* nav */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+  z-index: 10;
+
+}
+
+.logo {
+  font-family: "Lobster", sans-serif;
+  color: #f3f3f3;
+}
+
+.nav-links{
+  display: none;
+}
+
+.nav-links.open {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 14px;
+  position: absolute;
+  margin-top: 2.5rem;
+  right: 5%;
+  padding: 1rem;
+  background-color: rgba(24, 24, 24, 0.8);
+  z-index: 11;
+}
+
+.link {
+  color: #f3f3f3;
+}
+
+.hamburger {
+cursor: pointer;
+position: absolute;
+right: 5%;
+top: 50%;
+transform: translate(-5%,-50%);
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background: #f3f3f3;
+  margin: 5px;
+}
+
+/* landing page */
+.container {
+  background: url("/img/food.jpg") center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333333;
+  opacity: 0.6;
+}
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 9;
+  position: relative;
+
+}
+
+.title {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #f3f3f3;
+  text-shadow: 0px 1px 5px #303030;
+}
+.subtitle {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  color: #f3f3f3;
+  text-shadow: 0px 1px 5px #303030;
+}
+.hero__btn {
+  margin: 2rem auto;
+  padding: 12px 18px;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 5px #303030;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 0.8em;
+  background-color: transparent;
+  border: 2px solid #f3f3f3;
+}
+
+.hero__btn {
+  border-radius: 36px;
+  color: #f3f3f3;
+}
+
+.hero__btn:hover {
+  cursor: pointer;
+}
+
+.hero__headings {
+  text-align: center;
+  padding: 5rem 2rem;
+  width: 100%;
+}
+
+
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  
+  
+  .navbar ul {
+    display: flex;
+    align-items: center;
+  }
+  .navbar li {
+    margin-left: 1.5rem;
+    color: #f3f3f3;
+  }
+  .navbar li a {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    color: #f3f3f3;
+  }
+  .hamburger {
+    display: none;
+  }
+
+  .nav-btn {
+    padding: 10px 16px;
+    border-radius: 36px;
+    background: transparent;
+    border: 2px solid #f3f3f3;
+    color: #f3f3f3;
+  }
+}
+
+/* nav */
+/* .navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+.navbar li {
+  margin-left: 1.5rem;
+  color: #f3f3f3;
+}
+.navbar li a {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  color: #f3f3f3;
+}
+
+.nav-btn {
+  padding: 10px 16px;
+  border-radius: 36px;
+  background: transparent;
+  border: 2px solid #f3f3f3;
+  color: #f3f3f3;
+}
+
+.logo {
+  font-family: "Lobster", sans-serif;
+  color: #f3f3f3;
+} */
+
+/* main page */
+
+/* .banner {
+  background: url("/img/food.jpg") center;
+  background-size: cover;
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333333;
+  opacity: 0.6;
+}
+
+.banner > * {
+  z-index: 10;
+  position: relative;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #f3f3f3;
+  text-shadow: 0px 1px 5px #303030;
+}
+header h3 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  color: #f3f3f3;
+  text-shadow: 0px 1px 5px #303030;
+}
+header .btn {
+  margin: 2rem auto;
+  padding: 12px 18px;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 5px #303030;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 0.8em;
+  background-color: transparent;
+  border: 2px solid #f3f3f3;
+}
+
+.btn {
+  border-radius: 36px;
+  color: #f3f3f3;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.headings {
+  margin: 0 auto;
+  padding: 5rem;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+@media (max-width: 450px) {
+.nav-btn {
+  padding: 0;
+  border-radius: none;
+  background: transparent;
+  border: none;
+  color: #f3f3f3;
+}
+} */

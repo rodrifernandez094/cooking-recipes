@@ -1,0 +1,24 @@
+<%- include('partials/header'); -%>
+<%- include('partials/navbar'); -%>
+<div class="container">
+
+  <% if (recipes.length > 0) { %>
+
+  <div class="recipes">
+    <% recipes.forEach(recipe => { %>
+    <div class="card">
+      <img class="card-image" src="<%=recipe.image%>" alt="Dish image" />
+      <div class="card-text">
+        <h2 class=" card-title"><%=recipe.title%></h2>
+        <a class="btn-black" href="/recipes/<%=recipe._id%>">View recipe</a>
+      </div>
+    </div>
+    <% }) %>
+  </div>
+  <% } %>
+</div>
+
+
+
+
+<%- include('partials/footer'); -%>

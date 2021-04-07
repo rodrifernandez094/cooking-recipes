@@ -1,0 +1,21 @@
+<%- include('partials/header'); -%>
+<%- include('partials/navbar') %>
+
+<div class="container">
+  <form action="">
+    <h2>Sign up</h2>
+    <label for="userName">User name</label>
+    <input type="text" name="userName" maxlength="12" required />
+    <div id="user-error" class="userName error"></div>
+    <label for="email">Email</label>
+    <input type="email" name="email" required />
+    <div id="email-error" class="email error"></div>
+    <label for="password">Password</label>
+    <input type="password" name="password" required />
+    <div id="password-error" class="password error"></div>
+    <button class="form-btn">Sign up</button>
+  </form>
+</div>
+
+<script lang="javascript" type="text/javascript" src="/js/signup.js"></script>
+<%- include('partials/footer'); -%>

@@ -1,0 +1,22 @@
+<nav class="navbar">
+    <h1><a href="/" class="logo">Easy Cooking</a></h1>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <% if (user) { %>
+    <ul class="nav-links">
+        <!-- <li class="link">Welcome, < user.userName %></li> -->
+        <li><a href="/write-recipe" class="link">Write recipe</a></li>
+        <li><a href="/recipes" class="link">Recipes</a></li>
+        <li><a href="/logout" class="link nav-btn">Log out</a></li>
+    </ul>
+    <% } else { %>
+    <ul class="nav-links">
+        <li><a href="/login" class="link">Login</a></li>
+        <li><a href="/signup" class="link">Sign up</a></li>
+    </ul>
+    <% }%>
+</nav>
