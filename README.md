@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-First, run the development server:
+First, run the development server (you need nodemon):
 
 ```bash
 npm run dev
